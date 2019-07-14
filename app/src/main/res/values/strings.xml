@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="textview_Title">Welcome to ALC 4.0</string>
+    <string name="button_About">ABOUT ALC</string>
+    <string name="button2_Profile">MY PROFILE</string>
+    <string name="textview">ActivityB</string>
+    <string name="notification_error_ssl_cert_invalid">Warning! SSL Certificate is not valid!</string>
+    <string name="textView2_Name">Craig Theunissen</string>
+    <string name="imageView_ContentDescription">Profile Picture</string>
+    <string name="textView4_Track">Track:</string>
+    <string name="textView5_Track_Content">Android</string>
+    <string name="textView6_Country">Country:</string>
+    <string name="textView7_Country_Content">South Africa</string>
+    <string name="textView8_Email">Email:</string>
+    <string name="textView9_Email_Content">sctheunissen@gmail.com</string>
+    <string name="textView10_Mobile">Mobile:</string>
+    <string name="textView11_Mobile_Content">+27 71 880 9509</string>
+    <string name="textView12_Slack">Slack:</string>
+    <string name="textView13_Slack_Content">\@Craig</string>
+</resources>
