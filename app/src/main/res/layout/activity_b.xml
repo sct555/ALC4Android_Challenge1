@@ -10,6 +10,36 @@
         android:id="@+id/ActivityB_WebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-     />
+        android:fadeScrollbars="true"
+        android:scrollbarDefaultDelayBeforeFade="2000"
+        android:scrollbarFadeDuration="2000"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/colorSecondary" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Material.ProgressBar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/colorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent" />
+
+    <!-- Horizontal progress bar -->
+    <!--
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/ActivityB_WebView" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

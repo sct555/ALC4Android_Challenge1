@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ActivityC">
 
-
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
@@ -17,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/text_darkGrey"/>
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -25,7 +23,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-
         android:contentDescription="@string/imageView_ContentDescription"
         android:cropToPadding="false"
         android:paddingBottom="8dp"
@@ -180,6 +177,5 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView12_Slack"
         app:layout_constraintTop_toBottomOf="@+id/textView11_Mobile_Content" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
