@@ -14,7 +14,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/text_darkGrey"/>
+        android:background="@color/colorSecondary"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,6 +44,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -58,6 +59,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -71,6 +73,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toEndOf="@+id/textView4_Track"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -84,6 +87,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4_Track" />
 
@@ -97,6 +101,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toEndOf="@+id/textView6_Country"
         app:layout_constraintTop_toBottomOf="@+id/textView5_Track_Content" />
 
@@ -110,6 +115,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6_Country" />
 
@@ -123,6 +129,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toEndOf="@+id/textView8_Email"
         app:layout_constraintTop_toBottomOf="@+id/textView7_Country_Content" />
 
@@ -136,6 +143,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8_Email" />
 
@@ -149,6 +157,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toEndOf="@+id/textView10_Mobile"
         app:layout_constraintTop_toBottomOf="@+id/textView9_Email_Content" />
 
@@ -162,6 +171,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10_Mobile" />
 
@@ -175,6 +185,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
         app:layout_constraintStart_toEndOf="@+id/textView12_Slack"
         app:layout_constraintTop_toBottomOf="@+id/textView11_Mobile_Content" />
 
