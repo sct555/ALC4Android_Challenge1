@@ -10,12 +10,14 @@
         android:id="@+id/ActivityB_WebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:fadeScrollbars="true"
         android:scrollbarDefaultDelayBeforeFade="2000"
         android:scrollbarFadeDuration="2000"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:scrollbarSize="5dp"
-        android:scrollbarThumbVertical="@color/colorSecondary" />
+        android:scrollbarThumbVertical="@color/colorSecondary"
+        android:scrollbarThumbHorizontal="@color/colorSecondary" />
 
     <ProgressBar
         android:id="@+id/progressBar"
