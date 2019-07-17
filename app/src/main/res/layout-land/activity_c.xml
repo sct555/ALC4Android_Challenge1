@@ -4,38 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     tools:context=".ActivityC">
-
-    <!-- Horizontal guidelines -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineActivityCportait1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
 
     <!-- Vertical guidelines -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineActivityCportait2"
+        android:id="@+id/guidelineActivityClandscape1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineActivityCportait3"
+        android:id="@+id/guidelineActivityClandscape2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.35" />
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActivityClandscape3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActivityClandscape4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <!-- Horizontal guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActivityClandscape5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActivityClandscape6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorSecondary"
         app:cardCornerRadius="0dp"
         app:cardElevation="0dp"
@@ -48,11 +67,12 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2_Name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/textView2_Name"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -61,45 +81,61 @@
             android:cropToPadding="false"
             android:padding="0dp"
             app:layout_constraintBottom_toTopOf="@+id/textView2_Name"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineActivityClandscape2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape1"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile_pic" />
 
     </androidx.cardview.widget.CardView>
 
+    <!--
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imageView_ContentDescription"
+        android:cropToPadding="false"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2_Name"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineActivityClandscape2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+    -->
 
     <TextView
         android:id="@+id/textView2_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/textView2_Name"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineActivityCportait1"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineActivityClandscape2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape1"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TextView
         android:id="@+id/textView4_Track"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/textView4_Track"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView6_Country"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait2"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape3"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
@@ -112,20 +148,21 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView4_Track"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait3" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape4" />
 
     <TextView
         android:id="@+id/textView6_Country"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/textView6_Country"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView8_Email"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape3"
         app:layout_constraintTop_toBottomOf="@+id/textView4_Track" />
 
     <TextView
@@ -138,20 +175,21 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView6_Country"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait3" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape4" />
 
     <TextView
         android:id="@+id/textView8_Email"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/textView8_Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView10_Mobile"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape3"
         app:layout_constraintTop_toBottomOf="@+id/textView6_Country" />
 
     <TextView
@@ -164,20 +202,21 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView8_Email"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait3" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape4" />
 
     <TextView
         android:id="@+id/textView10_Mobile"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/textView10_Mobile"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView12_Slack"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape3"
         app:layout_constraintTop_toBottomOf="@+id/textView8_Email" />
 
     <TextView
@@ -190,20 +229,20 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView10_Mobile"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait3" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape4" />
 
     <TextView
         android:id="@+id/textView12_Slack"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/textView12_Slack"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape3"
         app:layout_constraintTop_toBottomOf="@+id/textView10_Mobile" />
 
     <TextView
@@ -216,14 +255,19 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView12_Slack"
-        app:layout_constraintStart_toStartOf="@+id/guidelineActivityCportait3" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape4" />
 
     <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:id="@+id/divider2"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
         android:background="@color/colorSecondary"
-        app:layout_constraintTop_toTopOf="@+id/guidelineActivityCportait1"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guidelineActivityClandscape6"
+        app:layout_constraintStart_toStartOf="@+id/guidelineActivityClandscape2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineActivityClandscape5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
